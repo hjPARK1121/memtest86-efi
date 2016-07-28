@@ -129,7 +129,7 @@ install() {
 		;;
 	esac
 
-	echo "Writting configuration..."
+	echo "Writing configuration..."
 	sed -i "s|@PARTITION@|$partition|g" "$CONFFILE"
 	sed -i "s|@ESP@|$esp|g"             "$CONFFILE"
 	sed -i "s|@CHOICE@|$choice|g"       "$CONFFILE"
